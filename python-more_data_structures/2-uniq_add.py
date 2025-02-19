@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
         if item not in unique_elements:
             unique_elements.append(item)
             total += item
-            return total
+    return total
