@@ -9,3 +9,4 @@ count = 0
     except IndexError:
         pass
     print()
+    return count
