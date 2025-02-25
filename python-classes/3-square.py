@@ -4,7 +4,6 @@ Defines a Square class with a private size and area method.
 Validates size type and value.
 """
 
-
 class Square:
     """Defines a square with a private size attribute."""
 
@@ -14,7 +13,7 @@ class Square:
 
         Args:
             size (int): Size of square, default is 0.
-
+        
         Raises:
             TypeError: If size isn't an integer.
             ValueError: If size is less than 0.
