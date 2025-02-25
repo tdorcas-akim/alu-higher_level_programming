@@ -3,10 +3,9 @@
 This module defines a class Square with a private size attribute.
 """
 
-
 class Square:
-    """This class defines a square with a private size attribute."""
+    """A class that defines a square with a private size attribute."""
 
-    def__init__(self, size):
-        """Initializes square with a private size attribute."""
+    def __init__(self, size):
+        """Initializes the square with the given size."""
         self.__size = size
