@@ -18,8 +18,8 @@ class Square:
             position (tuple): The position of the square. Default is (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of
-                        two positive integers.
+            TypeError: If size is not an integer or position is not a tuple
+                        of two positive integers.
             ValueError: If size is less than 0 or if position contains
                         non-positive integers.
         """
