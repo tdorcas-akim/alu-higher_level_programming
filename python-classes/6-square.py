@@ -7,7 +7,8 @@ position.
 
 
 class Square:
-    """This class defines a square with private size and position attributes."""
+    """This class defines a square with private size and position 
+        attributes."""
 
     def __init__(self, size=0, position=(0, 0)):
         """
