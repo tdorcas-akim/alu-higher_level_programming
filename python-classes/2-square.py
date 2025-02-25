@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
 This module defines a class Square with a private size attribute.
-The private size attribute has validation for type and value.
+The size attribute has validation for type and value.
 """
 
 
 class Square:
-    """This class defines a square with a private size attribute."""
+    """A class that defines a square with a private size attribute."""
 
-    def__init__(self, size=0):
-         """
+    def __init__(self, size=0):
+        """
         Initializes the square with the given size.
 
         Args:
