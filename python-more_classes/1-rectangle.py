@@ -12,8 +12,9 @@ def height(self):
 
 
     """
-    
-    return self.__height
+ 
+
+   return self.__height
 
 def height(self, value):
     """ method that defines the height
@@ -27,7 +28,8 @@ def height(self, value):
 
 
         """
-        
+ 
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
