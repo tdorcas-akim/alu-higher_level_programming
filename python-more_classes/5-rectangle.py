@@ -85,54 +85,29 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
 
-def area(self):
-        """Calculate the area of the rectangle
+    def __str__(self):
+        """Return a string representation of the rectangle
 
         Returns:
-            int: The rectangle area
-        """
-        return self.__width * self.__height
-
-    def perimeter(self):
-        """Calculate the perimeter of the rectangle
-
-        Returns:
-            int: The rectangle perimeter
+            str: String representation with # characters
         """
         if self.__width == 0 or self.__height == 0:
-            return 0
-        return 2 * (self.__width + self.__height)
-
-    def __str__(self):
-        """ Method that returns the Rectangle #
-
-        Returns:
-            str of the rectangle
-
-        """
-        rectangle = ""
-
-        if self.width == 0 or self.height == 0:
-            return rectangle
-
-        for i in range(self.height):
-            rectangle += ("#" * self.width) + "\n"
-
-        return rectangle[:-1]
+            return ""
+        
+        rectangle_str = []
+        for i in range(self.__height):
+            rectangle_str.append("#" * self.__width)
+        
+        return "\n".join(rectangle_str)
 
     def __repr__(self):
-        """ Method that returns the string of the instance
+        """Return a string representation of the rectangle for recreation
 
         Returns:
-            string representation of the object
-
+            str: String representation that can be used with eval()
         """
-
-        return "Rectangle({:d}, {:d})".format(self.width, self.height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """ Method that prints a message when instance is deletd
-
-        """
-        
+        """Print message when an instance of Rectangle is deleted"""
         print("Bye rectangle...")
