@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module containing Rectangle class definition"""
+""" Module containing Rectangle class definition"""
 
 
 class Rectangle:
