@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """
-This module defines a Rectangle class for calculating area, perimeter, 
+This module defines a Rectangle class for calculating area, perimeter,
 and handling instance counting with appropriate validation.
 """
 
 
 class Rectangle:
     """
-    A Rectangle class with width and height attributes, and methods for area, perimeter, 
+    A Rectangle class with width and height attributes, and methods for area, 
+    perimeter,
     string representation, and instance counting.
     """
 
@@ -58,7 +59,8 @@ class Rectangle:
         return 2 * (self.width + self.height)
 
     def __str__(self):
-        """Returns string representation of the rectangle using '#' characters."""
+        """Returns string representation of the rectangle using '#' characters
+        ."""
         if self.width == 0 or self.height == 0:
             return ""
         rect_str = ""
