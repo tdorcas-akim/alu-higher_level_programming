@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
 This module defines a Rectangle class with validation, instance counting,
-string representation, and a static method to compare the area of two rectangles.
+string representation, and a static method to compare the area of two rectangl
+es.
 """
 
 
 class Rectangle:
     """
-    Rectangle class with width and height, allowing area and perimeter calculations,
+    Rectangle class with width and height, allowing area and perimeter calcula
+    tions,
     and instance counting.
     """
 
@@ -52,7 +54,7 @@ class Rectangle:
     def height(self, value):
         """
         Sets the height, ensuring it is an integer and >= 0.
-        
+
         Args:
             value (int): Must be an integer >= 0.
 
