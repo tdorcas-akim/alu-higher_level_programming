@@ -7,7 +7,7 @@ and handling instance counting with appropriate validation.
 
 class Rectangle:
     """
-    A Rectangle class with width and height attributes, and methods for area, 
+    A Rectangle class with width and height attributes, and methods for area,
     perimeter,
     string representation, and instance counting.
     """
