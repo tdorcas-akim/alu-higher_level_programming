@@ -30,10 +30,10 @@ class Rectangle:
     def width(self, value):
         """
         Sets the width, ensuring it is an integer and >= 0.
-        
+
         Args:
             value (int): Must be an integer >= 0.
-        
+
         Raises:
             TypeError: If value is not an integer.
             ValueError: If value is less than 0.
@@ -53,10 +53,10 @@ class Rectangle:
     def height(self, value):
         """
         Sets the height, ensuring it is an integer and >= 0.
-        
+
         Args:
             value (int): Must be an integer >= 0.
-        
+
         Raises:
             TypeError: If value is not an integer.
             ValueError: If value is less than 0.
@@ -81,7 +81,7 @@ class Rectangle:
         """
         Returns string representation of the rectangle using print_symbol.
         If width or height is 0, returns an empty string.
-        
+
         Returns:
             str: The rectangle as a string of print_symbol characters.
         """
