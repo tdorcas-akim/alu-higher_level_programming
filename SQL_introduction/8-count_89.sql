@@ -1,5 +1,4 @@
--- This script counts the number of records in the table first_table in the da
-tabase
+-- This script counts the number of records with id = 89  in the database
 
 SELECT COUNT(*) 
 FROM first_table 
