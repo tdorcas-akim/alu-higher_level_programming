@@ -2,7 +2,12 @@
 """Module to return the JSON representation of an object."""
 
 
+import json
+
 def to_json_string(my_obj):
     """Returns the JSON representation of an object (string)."""
-    return str(my_obj).replace("'", '"') if isinstance(my_obj, str) else repr(
-            my_obj).replace("'", '"')
+    try:
+        return json.dumps(my_obj)
+    except TypeError:
+        raise TypeError(f"Object of type {type(my_obj).__name__} is not JSON s
+        erializable")
