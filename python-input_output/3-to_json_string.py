@@ -3,7 +3,9 @@
 Module that provides a function to return the JSON representation of an obj.
 """
 
+
 import json
+
 
 def to_json_string(my_obj):
     """
