@@ -4,4 +4,5 @@
 
 def to_json_string(my_obj):
     """Returns the JSON representation of an object (string)."""
-    return str(my_obj)
+    return str(my_obj).replace("'", '"') if isinstance(my_obj, str) else repr(
+            my_obj).replace("'", '"')
