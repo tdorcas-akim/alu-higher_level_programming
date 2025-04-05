@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Fetches the status of the ALU intranet and displays the response details."""
 
+
 import urllib.request
 
 if __name__ == "__main__":
