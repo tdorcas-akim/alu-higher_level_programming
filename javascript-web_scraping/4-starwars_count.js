@@ -1,22 +1,23 @@
 #!/usr/bin/node
 const request = require('request');
 
-const url = process.argv[2];
-const wedgeId = 'https://swapi-api.alx-tools.com/api/people/18/';
-
-request(url, (error, response, body) => {
-  if (!error) {
+request(process.argv[2], function (error, response, body) {
+  if (error) {
+    console.log(error);
+  } else {
     const data = JSON.parse(body);
-    let count = 0;
-
-    for (const film of data.results) {
-      if (film.characters.includes(wedgeId)) {
-        count++;
+    const movieCount = data.results.length;
+    let finalResult = 0;
+    // const comString = 'https://swapi-api.hbtn.io/api/people/18/';
+    for (let i = 0; i < movieCount; i++) {
+      const numChars = data.results[i].characters.length;
+      for (let j = 0; j < numChars; j++) {
+        const comString0 = data.results[i].characters[j];
+        if (comString0.slice(-4, -1) === '/18') {
+          finalResult += 1;
+        }
       }
     }
-
-    console.log(count);
-  } else {
-    console.log(error);
+    console.log(finalResult);
   }
 });
